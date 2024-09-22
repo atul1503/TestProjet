@@ -1,4 +1,4 @@
-package com.test.TestProjet.entity;
+package com.test.TestProjet.jwt;
 
 import java.util.Collection;
 import java.util.List;

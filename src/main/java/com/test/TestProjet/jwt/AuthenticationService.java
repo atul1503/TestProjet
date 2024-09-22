@@ -1,11 +1,7 @@
-package com.test.TestProjet.service;
+package com.test.TestProjet.jwt;
 
 
 
-import com.test.TestProjet.dtos.LoginUserDto;
-import com.test.TestProjet.dtos.RegisterUserDto;
-import com.test.TestProjet.entity.Person;
-import com.test.TestProjet.repository.PersonRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;

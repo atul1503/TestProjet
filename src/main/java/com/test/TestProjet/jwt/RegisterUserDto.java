@@ -1,4 +1,4 @@
-package com.test.TestProjet.dtos;
+package com.test.TestProjet.jwt;
 
 public class RegisterUserDto {
 	

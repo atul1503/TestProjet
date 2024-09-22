@@ -1,4 +1,4 @@
-package com.test.TestProjet.configuration;
+package com.test.TestProjet.jwt;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

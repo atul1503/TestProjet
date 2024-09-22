@@ -1,12 +1,5 @@
-package com.test.TestProjet.controller;
+package com.test.TestProjet.jwt;
 
-
-import com.test.TestProjet.entity.Person;
-import com.test.TestProjet.dtos.LoginUserDto;
-import com.test.TestProjet.dtos.RegisterUserDto;
-import com.test.TestProjet.dtos.LoginResponse;
-import com.test.TestProjet.service.AuthenticationService;
-import com.test.TestProjet.service.JwtService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
