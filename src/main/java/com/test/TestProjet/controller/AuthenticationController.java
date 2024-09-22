@@ -35,18 +35,15 @@ private final JwtService jwtService;
     @PostMapping("/signup")
     public ResponseEntity<Person> register(@RequestBody RegisterUserDto registerUserDto) {
         Person registeredPerson = authenticationService.signup(registerUserDto);
-        logger.info("signup is"+registeredPerson.toString());
         return ResponseEntity.ok(registeredPerson);
     }
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> authenticate(@RequestBody LoginUserDto loginUserDto) {
         Person authenticatedPerson = authenticationService.authenticate(loginUserDto);
-        //logger.info("in login"+authenticatedPerson.toString());
 
         String jwtToken = jwtService.generateToken(authenticatedPerson);
         
-        logger.info(jwtToken);
 
         LoginResponse loginResponse = new LoginResponse();
         		loginResponse.setToken(jwtToken);
